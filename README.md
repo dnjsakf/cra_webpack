@@ -8,4 +8,4 @@ npm install --save-dev css-loader babel-loader
 npm install --save-dev html-webpack-plugin mini-css-extract-plugin terser-webpack-plugin optimize-css-assets-webpack-plugin copy-webpack-plugin clean-webpack-plugin
 
 ## Install babel-presets
-npm insatll --save-dev @babel/preset-env
+npm install --save-dev @babel/preset-env
