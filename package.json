@@ -7,7 +7,9 @@
     "build": "npx webpack --config .webpack/webpack.config.prod.js",
     "dev": "npx webpack-dev-server --config .webpack/webpack.config.dev.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",

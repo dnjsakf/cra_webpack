@@ -7,11 +7,13 @@ const CopyPlugin = require("copy-webpack-plugin");
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-
 module.exports = {
-  mode: "production",
+  mode: "none",
   entry: {
     app: path.join(__dirname, "../js/index.js"),
+    vendor: [
+      '@babel/polyfill'
+    ]
   },
   output: {
     filename: "[name].bundle.js",
