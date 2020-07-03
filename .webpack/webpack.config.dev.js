@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(config, {
   mode: "development",
+  devtool: 'inline-source-map',
   plugins: [
     new webpack.DefinePlugin({
       PRODUCTION: JSON.stringify(false),
